@@ -1,0 +1,20 @@
+.productCard {
+	padding: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	max-width: 200px;
+
+	& img {
+		max-height: 176px;
+	}
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 631px) {
+	.productCard {
+		max-width: 50%;
+	}
+	& img {
+		max-height: none;
+	}
+}
