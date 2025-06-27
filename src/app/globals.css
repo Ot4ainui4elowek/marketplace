@@ -41,3 +41,28 @@ body {
 		max-width: calc(600px + 2rem);
 	}
 }
+
+.pagination_buttons {
+	display: flex;
+	gap: 1rem;
+	padding-bottom: 2rem;
+	justify-content: center;
+	align-items: center;
+	& button {
+		height: 3rem;
+		width: 3rem;
+		text-align: center;
+
+		font-size: 1.5rem;
+		border-radius: 2rem;
+		border: 0.1rem solid #000;
+	}
+	& button:active {
+		background-color: #000;
+		color: #fff;
+	}
+
+	& h2 {
+		font-size: 1.5rem;
+	}
+}

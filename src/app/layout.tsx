@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
+import { SkeletonTheme } from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 import './globals.css'
 
 const montserrat = Montserrat({
@@ -20,7 +22,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' className={montserrat.className}>
-			<body className={`antialiased`}>{children}</body>
+			<SkeletonTheme baseColor='#b1b1b1' highlightColor='#e0e0e0'>
+				<body className={`antialiased`}>{children}</body>
+			</SkeletonTheme>
 		</html>
 	)
 }
