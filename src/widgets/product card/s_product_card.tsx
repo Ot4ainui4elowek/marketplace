@@ -5,7 +5,7 @@ import s from './style.module.css'
 export const SkeletonProductCard = () => {
 	return (
 		<div className={s.productCard}>
-			<Skeleton height={176} />
+			<Skeleton height={176} width={176} />
 			<Skeleton count={3} />
 		</div>
 	)

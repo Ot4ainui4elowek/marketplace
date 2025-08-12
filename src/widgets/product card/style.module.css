@@ -12,12 +12,16 @@
 		margin-top: 4px;
 		-top: 4px;
 	}
+	span {
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width: 631px) {
 	.productCard {
 		width: 50%;
 	}
+
 	& img {
 		max-height: none;
 	}

@@ -12,8 +12,8 @@ export const ProductCard = (props: props) => {
 				<Img
 					src={product.images[0]}
 					alt='Фотография продукта'
-					width='176px'
-					height='176px'
+					width='176'
+					height='176'
 				/>
 			</div>
 

@@ -28,7 +28,7 @@ export const Img = ({ src, alt, height, width }: IReactImage) => {
 	return (
 		<div>
 			{isLoading ? (
-				<Skeleton height={height} width={width} />
+				<Skeleton height={height + 'px'} width={width} />
 			) : (
 				<img height={height} width={width} src={imageUrl} />
 			)}
@@ -38,6 +38,6 @@ export const Img = ({ src, alt, height, width }: IReactImage) => {
 interface IReactImage {
 	src: string
 	alt?: string
-	height?: string
-	width?: string
+	height?: number
+	width?: number
 }

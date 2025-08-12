@@ -18,51 +18,14 @@
     --foreground: #ededed;
   }
 } */
-
+* {
+	scroll-behavior: smooth;
+}
 body {
 	/* background: var(--background);
   color: var(--foreground); */
-	font-family: Arial, sans-serif;
-}
-.main {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	max-width: calc(1000px + 2rem);
-	padding: 1rem;
-}
-@media screen and (max-width: 1031px) {
-	.main {
-		max-width: calc(800px + 2rem);
-	}
-}
-@media screen and (max-width: 830px) {
-	.main {
-		max-width: calc(600px + 2rem);
-	}
 }
 
-.pagination_buttons {
-	display: flex;
-	gap: 1rem;
-	padding-bottom: 2rem;
-	justify-content: center;
-	align-items: center;
-	& button {
-		height: 3rem;
-		width: 3rem;
-		text-align: center;
-
-		font-size: 1.5rem;
-		border-radius: 2rem;
-		border: 0.1rem solid #000;
-	}
-	& button:active {
-		background-color: #000;
-		color: #fff;
-	}
-
-	& h2 {
-		font-size: 1.5rem;
-	}
+#overflow-lock {
+	overflow: hidden;
 }
